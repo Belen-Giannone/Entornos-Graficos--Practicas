@@ -3,4 +3,22 @@ PRACTICA 1 - ENTORNOS GRAFICOS (UTN)
 Respuestas de la Ejercitacion 1
 ==================================================
 
-1. ¿Que es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+Significa HyperText Markup Language (Lenguaje de Marcado de Hipertexto). Es el lenguaje estándar utilizado para estructurar y desplegar el contenido de las páginas web.
+Fue diseñado por Tim Berners-Lee en 1991.
+Evolución de versiones:
+
+HTML 1.0 / HTML 2.0: (1993 - 1995) Primeras especificaciones estándar para compartir texto e imágenes básicas.
+
+HTML 3.2: (1997) Introdujo tablas y soporte mejorado para applets de Java.
+
+HTML 4.0 / 4.01: (1997 - 1999) Separó la estructura del estilo (promoviendo CSS) y añadió soporte para marcos, hojas de estilo e idiomas (esta es la versión que toma principalmente de referencia la práctica de la UTN).
+
+XHTML 1.0: (2000) Una reformulación de HTML 4.01 aplicando las reglas estrictas del lenguaje XML.
+
+HTML5: Publicado formalmente por el W3C en 2014.
+
+Última versión: HTML5 (actualmente mantenido bajo el modelo de estándar vivo o HTML Living Standard por el WHATWG/W3C).
+
+==================================================
