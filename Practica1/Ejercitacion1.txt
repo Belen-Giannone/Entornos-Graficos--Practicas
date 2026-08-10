@@ -2,7 +2,6 @@
 PRACTICA 1 - ENTORNOS GRAFICOS (UTN)
 Respuestas de la Ejercitacion 1
 ==================================================
-
 1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
 
 Significa HyperText Markup Language (Lenguaje de Marcado de Hipertexto). Es el lenguaje estándar utilizado para estructurar y desplegar el contenido de las páginas web.
@@ -13,7 +12,7 @@ HTML 1.0 / HTML 2.0: (1993 - 1995) Primeras especificaciones estándar para comp
 
 HTML 3.2: (1997) Introdujo tablas y soporte mejorado para applets de Java.
 
-HTML 4.0 / 4.01: (1997 - 1999) Separó la estructura del estilo (promoviendo CSS) y añadió soporte para marcos, hojas de estilo e idiomas (esta es la versión que toma principalmente de referencia la práctica de la UTN).
+HTML 4.0 / 4.01: (1997 - 1999) Separó la estructura del estilo (promoviendo CSS) y añadió soporte para marcos, hojas de estilo e idiomas.
 
 XHTML 1.0: (2000) Una reformulación de HTML 4.01 aplicando las reglas estrictas del lenguaje XML.
 
@@ -22,3 +21,62 @@ HTML5: Publicado formalmente por el W3C en 2014.
 Última versión: HTML5 (actualmente mantenido bajo el modelo de estándar vivo o HTML Living Standard por el WHATWG/W3C).
 
 ==================================================
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+El W3C (World Wide Web Consortium) recomienda principalmente:
+
+Separación de estructura y presentación: 
+El HTML debe encargarse únicamente de la estructura y el significado semántico del documento, mientras que el diseño, color 
+y tipografía deben manejarse mediante CSS.
+
+Accesibilidad (Web for All): 
+El diseño debe ser accesible para todas las personas, independientemente de sus capacidades físicas, cognitivas o del 
+dispositivo que utilicen.
+
+Uso de HTML Semántico: 
+Utilizar las etiquetas adecuadas para su función original (por ejemplo, <header>, <article>, <p> en lugar de usar únicamente <div>).
+
+Validez del código: 
+Escribir código que cumpla con los estándares oficiales (respetando sintaxis, etiquetas de cierre y atributos requeridos).
+
+Compatibilidad e interoperabilidad: Garantizar que las páginas se visualicen correctamente en diferentes navegadores, 
+sistemas operativos y dispositivos.
+
+==================================================
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿Y obsoleto?
+Desaprobado (Deprecated): 
+Es un elemento o atributo que ha sido superado o reemplazado por formas más eficientes o modernas (por ejemplo, reemplazar <font> o el 
+atributo align por estilos CSS). Aunque aún es soportado por los navegadores por retrocompatibilidad, el W3C desaconseja totalmente su 
+uso en proyectos nuevos.  
+
+Obsoleto (Obsolete): 
+Es un elemento o atributo que ha sido completamente eliminado de la especificación. Los navegadores ya no están obligados a darle soporte, 
+no cumple ningún estándar y su uso puede provocar que la página no funcione o no se renderice correctamente.
+
+==================================================
+4. ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+Significa Document Type Definition (Definición del Tipo de Documento). Es una declaración (generalmente a través de la etiqueta <!DOCTYPE ...>) 
+que indica al navegador qué versión específica de HTML se está utilizando, para que este sepa cómo interpretar y renderizar correctamente el código.
+
+DTDs contemplados en HTML 4.01:
+
+Strict (Estricto): Prohíbe totalmente el uso de elementos desaprobados/marcado de presentación (como <font>) y el uso de marcos (frames).
+
+Transitional (Transitorio): Permite utilizar elementos y atributos desaprobados para facilitar la transición desde versiones más antiguas 
+de HTML o código heredado.  
+
+Frameset (Marcos): Igual al Transitional, pero añade soporte para crear páginas basadas en marcos (<frameset>).
+
+==================================================
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+- ¿Qué son?: Los metadatos son "datos sobre los datos", es decir, información técnica que describe al documento HTML más que a su contenido visible. 
+No se muestra directamente en la pantalla para el usuario, pero es fundamental para los navegadores, motores de búsqueda (SEO) y otros servicios web 
+(como la codificación de caracteres, palabras clave, autor o instrucciones de expiración).
+
+- ¿Cómo se especifican?: Se ubican siempre dentro de la sección <head> del documento mediante la etiqueta <meta /> (que es un elemento vacío) utilizando 
+atributos como name, http-equiv y content, o mediante el elemento <link> para vincular metadatos externos.
+
+En general, la especificación de metadatos implica dos pasos:
+1. Declaración de una propiedad y un valor:
+   - Desde dentro del documento, mediante el elemento <meta />.
+   - Desde fuera del documento, vinculándolos por medio del elemento <link>.
+2. Referencia a un perfil donde se definen las propiedades y sus valores legales (utilizando el atributo profile en el elemento <head>).
