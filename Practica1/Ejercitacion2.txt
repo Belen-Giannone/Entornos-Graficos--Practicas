@@ -1,0 +1,14 @@
+==================================================
+PRACTICA 1 - ENTORNOS GRAFICOS (UTN)
+Respuestas de la Ejercitacion 2
+==================================================
+
+2.a <!-- Código controlado el día 12/08/2009 →
+- Sección: Se puede colocar tanto en el <head> como en el <body>.
+- Efecto: Pretende ser un comentario HTML, pero presenta un error de sintaxis al final. No se renderiza en la pantalla del navegador; 
+sirve únicamente como nota explicativa o documentación para el desarrollador.
+- Desglose y corrección:
+  * Sintaxis correcta: <!-- Código controlado el día 12/08/2009 -->
+  * Error detectado: Le falta la etiqueta/delimitador de cierre correcto (-->). Al usar '→', el comentario no se cierra correctamente y 
+  el navegador considerará como parte del comentario todo el código que le siga.
+- Atributos: No posee.
