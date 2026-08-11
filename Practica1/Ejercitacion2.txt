@@ -40,3 +40,24 @@ longdesc --> su valor es "detalles.htm" e indica la ubicacion de una descripcion
 -Obligatoriedad: El elemento <img> no es obligatoriodentro del documento HTML. 
 Los atributos src y alt son los atributos principales para especificar la imagen y su descripcion alternativa, 
 mientras que id, name, width, height y longdesc son opcionales. 
+
+2.d <meta name="keywords" lang="es" content="casa, compra, venta, alquiler"/>
+<meta http-equiv="expires" content="16-Sep-2019 7:49PM"/>
+-Seccion: Se colocan dentro de la seccion <head> del doc HTML, ya que son elementos que proporcionan informacion
+sobre el documento y no forman parte del contenido visible de la pagina.
+-Efecto: El primer elemnto <meta> proporciona informacion sobre las palabras clave asociadas al documento, en este caso
+relacionadas con una casa, compra, venta y alquiler. El atributo lang nos indica que las palabras estan en español.
+El segundo elemento <meta> indica una fecha y hora de expieracion del documento mediante el atributo http-equiv,
+estableciento como fecha de expiracion el16 de septiembre de 2019 a las 7:49PM.
+-Elementos y etiquetas: Se usan los dos elementos <meta>. Ambos son elementos vacios por lo que no tienen etiqueta de cierre.
+-Atributos: 
+El primer elemento <meta> tiene los atributos:
+name --> su valor es "keywords" e indica que el contenido son palabras clave del documento.
+lang --> su valor es "es" e indica que el contenido esta en español.
+content --> contiene las palabras clave "casa, compra, venta, alquiler"
+
+segundo elemento posee: 
+http-equiv --> su valor es "expires" y eso indica que se establece una fecha de expiracion para el doc.
+content--> su valor es "16-Sep-2019 7:49PM" e indica la fecha y hora de expiracion.
+-Obligatoriedad: Los elementos <meta> no son obligatorios dentro de un documento HTML. Los atributos usados en 
+ambos elementos son opcionales pero algunos son necesarios para indicar que informacion proporciona cada etiqueta <meta>.
