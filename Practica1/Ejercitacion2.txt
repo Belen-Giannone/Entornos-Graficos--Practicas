@@ -21,3 +21,22 @@ sirve únicamente como nota explicativa o documentación para el desarrollador.
 </div> --> etiqueta de cierre.
 -Atributos: Posee un atributo con nombre: id y su valor es "bloque1".
 -Obligatoriedad: El elemento <div> no es obligatorio dentro de un documento HTML.
+
+2.c <img src="" alt="lugar imagen" id="iml" name="iml" width="32" height="32" longdesc="detalles.htm"/>
+-Seccion: Se coloca dentro de la seccion <body> del doc HTML, ya que es un elemento que forma parte del contenido visible de la pagina.
+-Efecto: <img> permite insertar una imagen en la pagina. En este caso, 
+la imagen no tiene una ubicacion especifica porque el atributo src tiene un valor vacio.
+Los atributos width y height establecen un ancho y alto de 32 pixeles.
+-Elementos y etiquetas: El elemento que se utiliza es <img>. Es un elemento vacio, por lo que no posee etiqueta de cierre.
+Se usa la unica etiqueta: <img .../>
+-Atributos: 
+src --> su valor es ""y especifica la ubicacion de la imagen.
+alt --> su valor es "lugar imagen" y proporciona un texto alternativo para la imagen.
+id --> su valor es "iml" e identifica el elemento dentro del documento.
+name --> su valor tambien es "iml" y asigna el nombre al elemento.
+width --> su valor es "32" y estabece el ancho de la imagen.
+height --> su valor es "32" y estabece la altura de la imagen.
+longdesc --> su valor es "detalles.htm" e indica la ubicacion de una descripcion detallada de la imagen.
+-Obligatoriedad: El elemento <img> no es obligatoriodentro del documento HTML. 
+Los atributos src y alt son los atributos principales para especificar la imagen y su descripcion alternativa, 
+mientras que id, name, width, height y longdesc son opcionales. 
