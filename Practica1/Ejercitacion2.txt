@@ -12,3 +12,12 @@ sirve únicamente como nota explicativa o documentación para el desarrollador.
   * Error detectado: Le falta la etiqueta/delimitador de cierre correcto (-->). Al usar '→', el comentario no se cierra correctamente y 
   el navegador considerará como parte del comentario todo el código que le siga.
 - Atributos: No posee.
+
+2.b <div id="bloque1">Contenido del bloque</div> 
+-Seccion: Se coloca dentro de la seccion <body> del doc HTML, ya que es un elemento que forma parte del contenido visible de la pagina.
+-Efecto: <div> crea un contenedor o bloque que contiene texto, en este caso "Contenido del bloque".
+-Elementos y etiquetas: El elemento utilizado es <div>. Posee dos etiquetas: 
+<div> --> etiqueta de apertura.
+</div> --> etiqueta de cierre.
+-Atributos: Posee un atributo con nombre: id y su valor es "bloque1".
+-Obligatoriedad: El elemento <div> no es obligatorio dentro de un documento HTML.
