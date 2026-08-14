@@ -57,7 +57,24 @@ lang --> su valor es "es" e indica que el contenido esta en español.
 content --> contiene las palabras clave "casa, compra, venta, alquiler"
 
 segundo elemento posee: 
-http-equiv --> su valor es "expires" y eso indica que se establece una fecha de expiracion para el doc.
-content--> su valor es "16-Sep-2019 7:49PM" e indica la fecha y hora de expiracion.
+http-equiv -> su valor es "expires" y eso indica que se establece una fecha de expiracion para el doc.
+content-> su valor es "16-Sep-2019 7:49PM" e indica la fecha y hora de expiracion.
 -Obligatoriedad: Los elementos <meta> no son obligatorios dentro de un documento HTML. Los atributos usados en 
 ambos elementos son opcionales pero algunos son necesarios para indicar que informacion proporciona cada etiqueta <meta>.
+
+2.e <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+-Sección: Se coloca dentro de la sección <body> del documento HTML, ya que el elemento <a> forma parte del contenido visible y 
+permite crear enlaces interactivos en la página.
+-Efecto: La etiqueta <a> crea un hipervínculo que, al hacer clic en el texto “Resumen HTML”, dirige al usuario al sitio web indicado 
+en el atributo href. En este caso, el enlace apunta a la página http://www.e-style.com.ar/resumen.html.
+-Elemento y etiqueta: Se utiliza el elemento <a> (ancla). Es un elemento que sí tiene etiqueta de cierre, por lo que se escribe como <a> ... </a>.
+-Atributos: 
+href="http://www.e-style.com.ar/resumen.html" → Define la dirección del enlace. Obligatorio.
+type="text/html" → Indica el tipo de contenido al que apunta el enlace (en este caso, una página HTML). Opcional.
+hreflang="es" → Especifica el idioma del documento enlazado (español). Opcional.
+charset="utf-8" → Indica la codificación de caracteres del documento destino. Opcional.
+rel="help" → Define la relación entre el documento actual y el destino; en este caso, el enlace lleva a una página de ayuda. Opcional.
+-Obligatoriedad: El elemento <a> no es obligatorio dentro de un documento HTML, pero cuando se utiliza, el atributo href es esencial para definir 
+la dirección del enlace. Los demás atributos (type, hreflang, charset, rel) son opcionales y se emplean para aportar información adicional sobre 
+el recurso enlazado.
