@@ -78,3 +78,44 @@ rel="help" → Define la relación entre el documento actual y el destino; en es
 -Obligatoriedad: El elemento <a> no es obligatorio dentro de un documento HTML, pero cuando se utiliza, el atributo href es esencial para definir 
 la dirección del enlace. Los demás atributos (type, hreflang, charset, rel) son opcionales y se emplean para aportar información adicional sobre 
 el recurso enlazado.
+
+2.f 
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+-Sección: Se coloca dentro de la sección <body> del documento HTML, ya que corresponde a contenido visible en la página.
+-Efecto: La etiqueta <table> crea una tabla de 200 píxeles de ancho con un título en la parte superior. La primera fila define los encabezados de 
+columna (A, B, C) y las siguientes filas muestran datos organizados en celdas. El atributo summary describe el propósito de la tabla.
+-Elemento y etiquetas:
+<table> → elemento principal que define la tabla.
+<caption> → título de la tabla.
+<tr> → fila de la tabla.
+<th> → celda de encabezado (columna o fila).
+<td> → celda de datos.
+-Atributos:
+width="200" → define el ancho de la tabla en píxeles. Opcional.
+summary="Datos correspondientes al ejercicio vencido" → proporciona una descripción de la tabla (usado para accesibilidad). Opcional.
+align="top" (en <caption>) → indica la posición del título. Opcional.
+scope="col" → indica que el encabezado aplica a una columna. Opcional.
+scope="row" → indica que el encabezado aplica a una fila. Opcional.
+-Obligatoriedad: El elemento <table> no es obligatorio en un documento HTML. Dentro de una tabla, las etiquetas <tr>, <th> y <td> son necesarias para 
+definir filas y celdas. Los atributos (width, summary, align, scope) son opcionales y se usan para mejorar presentación y accesibilidad.
