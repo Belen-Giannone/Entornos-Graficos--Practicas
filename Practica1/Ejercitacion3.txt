@@ -58,3 +58,19 @@ Usar value permite controlar la numeración manualmente.
 <blockquote> solo simula una lista, pero no es reconocida como tal por el navegador ni por lectores de accesibilidad.
 
 3.d
+- Diferencias en visualización:
+Primer caso:
+Usa <th> para los encabezados de columna.
+Los títulos aparecen automáticamente en negrita y centrados por defecto.
+Las celdas de datos (<td>) se muestran alineadas a la izquierda.
+
+Segundo caso:
+No usa <th>, sino <td> con estilos manuales (<div align="center"><strong>…</strong></div>).
+Esto obliga a centrar y poner en negrita el contenido de forma explícita.
+Las celdas de datos también se centran gracias al <div align="center">.
+
+- Conclusión:  
+Ambos códigos generan tablas similares, pero:
+El primer caso aprovecha la semántica de <th> para encabezados, lo que es más correcto y accesible.
+El segundo caso fuerza la presentación con <div> y estilos, lo que da más control visual pero pierde semántica.
+En navegadores modernos y para accesibilidad, se recomienda usar <th> para encabezados y CSS para estilos.
