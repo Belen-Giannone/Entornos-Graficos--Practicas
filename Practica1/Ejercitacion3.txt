@@ -21,3 +21,25 @@ El cuarto (href="#") no lleva a otra página, simplemente recarga la misma.
 El quinto (href="#arriba") desplaza la vista hacia el marcador interno definido con <a name="arriba" id="arriba"></a>.
 
 3.b 
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+
+- Diferencias en visualización:
+Primer caso: La imagen aparece primero y al lado un enlace textual “Click aquí”. La imagen no es clickeable, solo el texto.
+Segundo caso: La imagen está dentro del enlace, por lo que al hacer clic en la imagen se abre Google. El texto “Click aquí” aparece 
+fuera del enlace, separado.
+Tercer caso: Tanto la imagen como el texto “Click aquí” están dentro del mismo enlace, por lo que ambos son clickeables y llevan a Google.
+Cuarto caso: Hay dos enlaces distintos: uno sobre la imagen y otro sobre el texto. Ambos llevan a Google, pero son independientes (dos áreas 
+clickeables separadas).
+
+- Conclusión:  
+Aunque todos los ejemplos muestran una imagen y un texto, la diferencia está en qué parte es clickeable:
+Solo el texto (primer caso).
+Solo la imagen (segundo caso).
+Imagen + texto juntos (tercer caso).
+Imagen y texto en enlaces separados (cuarto caso).
+
+3.c
