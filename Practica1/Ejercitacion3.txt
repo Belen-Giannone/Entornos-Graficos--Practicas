@@ -1,0 +1,23 @@
+==================================================
+PRACTICA 1 - ENTORNOS GRAFICOS (UTN)
+Respuestas de la Ejercitacion 2
+==================================================
+
+3.a
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+<a href="#">Click aquí para ir a Google</a>
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+- Diferencias en visualización:
+
+El primer enlace abre Google en la misma pestaña.
+El segundo abre Google en una nueva pestaña/ventana (target="_blank").
+El tercero se ve igual que el primero, pero incluye atributos semánticos (type, hreflang, charset, rel) que no cambian la visualización, 
+solo aportan información adicional.
+El cuarto (href="#") no lleva a otra página, simplemente recarga la misma.
+El quinto (href="#arriba") desplaza la vista hacia el marcador interno definido con <a name="arriba" id="arriba"></a>.
+
+3.b 
