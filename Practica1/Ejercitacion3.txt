@@ -43,3 +43,18 @@ Imagen + texto juntos (tercer caso).
 Imagen y texto en enlaces separados (cuarto caso).
 
 3.c
+- Diferencias en visualización:
+Lista no ordenada (<ul>): Muestra los ítems con viñetas (●).
+Lista ordenada (<ol> con varios <li>): Muestra los ítems numerados automáticamente (1, 2, 3).
+Listas ordenadas separadas con value: Cada <ol> comienza un nuevo bloque, pero el atributo value fuerza la numeración (ejemplo: ítem “yyy” 
+aparece como número 2, “ZZZ” como número 3).
+Bloque de cita (<blockquote> con <p>): No es una lista real; el texto se muestra como un párrafo con saltos de línea y numeración escrita 
+manualmente. Visualmente parece una lista, pero no tiene semántica de lista.
+
+- Conclusión:  
+Aunque todos muestran ítems, la diferencia está en cómo se presentan y cómo el navegador interpreta la estructura:
+<ul> y <ol> generan listas semánticas con viñetas o números automáticos.
+Usar value permite controlar la numeración manualmente.
+<blockquote> solo simula una lista, pero no es reconocida como tal por el navegador ni por lectores de accesibilidad.
+
+3.d
