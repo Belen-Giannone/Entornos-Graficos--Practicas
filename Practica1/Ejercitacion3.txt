@@ -162,3 +162,21 @@ El tercero intenta enviar los datos por correo, lo cual no es habitual ni recome
 “Enviar” no cumple esa función porque es de tipo reset.
 En buenas prácticas modernas, se recomienda usar POST para formularios de login y manejar el envío con scripts del lado del 
 servidor (PHP, Python, etc.), evitando mailto y GET para datos sensibles.
+
+3.i 
+- Diferencias en visualización
+Primer código:
+Usa la etiqueta <button>, que permite incluir contenido HTML dentro del botón, como imágenes (<img>) y texto con formato (<b>).
+Visualmente, el botón muestra una imagen encima del texto “CLICK AQUÍ”, ambos dentro del mismo elemento clickeable.
+Es más flexible, ya que se puede personalizar el contenido y el estilo del botón.
+
+Segundo código:
+Usa <input type="button">, que solo permite texto plano en el atributo value.
+El botón muestra únicamente el texto “CLICK AQUÍ”, sin posibilidad de incluir imágenes ni formato interno.
+Es más simple y rápido de implementar, pero menos personalizable.
+
+- Conclusión
+Ambos crean botones clickeables, pero difieren en flexibilidad y apariencia:
+El primer botón (con <button>) permite combinar imagen y texto, ideal para interfaces más visuales o personalizadas.
+El segundo botón (con <input type="button">) es más limitado, útil para acciones simples donde solo se necesita texto.
+En buenas prácticas modernas, se prefiere <button> porque admite contenido HTML y es más accesible y adaptable a estilos CSS.
