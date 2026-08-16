@@ -180,3 +180,22 @@ Ambos crean botones clickeables, pero difieren en flexibilidad y apariencia:
 El primer botón (con <button>) permite combinar imagen y texto, ideal para interfaces más visuales o personalizadas.
 El segundo botón (con <input type="button">) es más limitado, útil para acciones simples donde solo se necesita texto.
 En buenas prácticas modernas, se prefiere <button> porque admite contenido HTML y es más accesible y adaptable a estilos CSS.
+
+3.j 
+- Diferencias en visualización y funcionamiento
+Primer código:
+Ambos botones de opción (radio) comparten el mismo atributo name="opcion".
+Esto los agrupa en un mismo conjunto de opciones: el usuario solo puede seleccionar una de las dos (X o Y).
+Visualmente, se muestran dos círculos vacíos con etiquetas “X” y “Y”, y al marcar uno, el otro se desmarca automáticamente.
+
+Segundo código:
+Cada botón tiene un nombre distinto (name="opcion1" y name="opcion2").
+Al no compartir el mismo nombre, no están agrupados, por lo que el usuario puede marcar ambos simultáneamente.
+Visualmente parecen iguales, pero funcionalmente actúan como controles independientes.
+
+- Conclusión
+La diferencia clave está en el atributo name, que define el grupo de selección:
+Si los botones comparten el mismo name, forman un grupo y solo se puede elegir una opción.
+Si tienen nombres distintos, funcionan como botones independientes, permitiendo seleccionar más de uno.
+En buenas prácticas, los botones de tipo radio deben compartir el mismo name cuando representan opciones excluyentes dentro 
+de una misma pregunta o categoría.
