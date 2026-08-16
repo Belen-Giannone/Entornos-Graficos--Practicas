@@ -111,3 +111,26 @@ rowspan combina filas en una misma columna (vertical).
 Visualmente, el título cambia de posición: arriba ocupando todo el ancho (colspan) o al costado ocupando toda la altura (rowspan).
 En buenas prácticas, se recomienda usar colspan y rowspan solo cuando sea necesario para organizar datos, y acompañarlo con CSS 
 para mejorar la presentación.
+
+3.g
+- Diferencias en visualización
+Primer código:
+La tabla tiene bordes visibles (border="1") y un ancho de 200 píxeles.
+No se definen cellpadding ni cellspacing, por lo que el navegador aplica los valores por defecto (espacio interno entre el contenido 
+y el borde de cada celda, y separación entre celdas).
+El título ocupa tres columnas (colspan="3") y está centrado con <div align="center">.
+Las celdas se ven más separadas entre sí, con espacio interno visible.
+
+Segundo código:
+También tiene bordes y el mismo ancho, pero agrega cellpadding="0" y cellspacing="0".
+Esto elimina el espacio interno y la separación entre las celdas, haciendo que los bordes se vean más juntos y compactos.
+El título ocupa solo dos columnas (colspan="2"), por lo que la estructura es más angosta.
+Visualmente, la tabla se ve más ajustada y con líneas más finas entre las celdas.
+
+- Conclusión
+La diferencia principal está en el espaciado interno y externo de las celdas:
+El primer código usa los valores por defecto, mostrando una tabla con más aire entre los bordes y el contenido.
+El segundo código elimina esos espacios con cellpadding="0" y cellspacing="0", logrando una apariencia más compacta.
+Además, el uso distinto de colspan cambia la distribución del título: tres columnas en el primero, dos en el segundo.
+En buenas prácticas modernas, se recomienda controlar estos aspectos con CSS (por ejemplo, border-spacing y padding) en lugar de 
+atributos HTML, para mantener el código más limpio y flexible.
