@@ -199,3 +199,23 @@ Si los botones comparten el mismo name, forman un grupo y solo se puede elegir u
 Si tienen nombres distintos, funcionan como botones independientes, permitiendo seleccionar más de uno.
 En buenas prácticas, los botones de tipo radio deben compartir el mismo name cuando representan opciones excluyentes dentro 
 de una misma pregunta o categoría.
+
+3.k 
+- Diferencias en visualización y funcionamiento
+Primer código:
+Muestra una lista desplegable simple, donde el usuario puede elegir una sola opción.
+Los grupos de opciones (<optgroup>) se muestran con encabezados (“Caso 1” y “Caso 2”) que organizan las opciones dentro del menú.
+Al hacer clic, se despliega el menú y se selecciona un único valor.
+
+Segundo código:
+Usa el atributo multiple="multiple", lo que convierte la lista en una lista de selección múltiple.
+El usuario puede elegir varias opciones a la vez (manteniendo presionadas las teclas Ctrl o Shift).
+Visualmente, la lista se muestra más alta, con todas las opciones visibles simultáneamente, en lugar de desplegarse.
+El nombre lista[] indica que se enviarán varios valores al servidor como un arreglo.
+
+- Conclusión
+Ambos códigos crean listas de selección con grupos de opciones, pero difieren en cómo el usuario interactúa:
+El primer código permite una sola elección, ideal para seleccionar un único valor.
+El segundo código permite múltiples selecciones, útil cuando se necesita elegir más de una opción.
+En buenas prácticas, se usa multiple cuando el contexto requiere varias respuestas y optgroup para organizar las opciones de 
+forma clara y accesible
