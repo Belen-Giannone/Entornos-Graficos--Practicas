@@ -134,3 +134,31 @@ El segundo código elimina esos espacios con cellpadding="0" y cellspacing="0", 
 Además, el uso distinto de colspan cambia la distribución del título: tres columnas en el primero, dos en el segundo.
 En buenas prácticas modernas, se recomienda controlar estos aspectos con CSS (por ejemplo, border-spacing y padding) en lugar de 
 atributos HTML, para mantener el código más limpio y flexible.
+
+3.h 
+- Diferencias en visualización y funcionamiento
+Primer formulario:
+Usa method="post" y action="procesar.php", por lo que los datos se envían al servidor para ser procesados.
+Los campos están dentro de un <fieldset> con <legend>LOGIN>, lo que crea un recuadro con título.
+El botón “Enviar” es de tipo submit, y abre el resultado en una nueva pestaña (target="_blank").
+Visualmente, se ve más estructurado y profesional.
+
+Segundo formulario:
+Usa method="get", por lo que los datos se envían en la URL (visible en la barra de direcciones).
+No tiene <fieldset> ni <legend>, por lo que se muestra sin recuadro.
+Los campos están dentro de etiquetas <label>, lo que mejora la accesibilidad pero no cambia mucho la apariencia.
+El botón también es submit, y abre el resultado en una nueva pestaña.
+
+Tercer formulario:
+Usa action="mailto:xx@xx.com", lo que intenta enviar los datos por correo electrónico en formato texto plano (enctype="text/plain").
+El botón es de tipo reset, por lo que no envía los datos, sino que borra el contenido de los campos.
+Visualmente, se parece al primero (usa <fieldset> y <legend>), pero su comportamiento es completamente distinto.
+
+- Conclusión
+Los tres formularios muestran campos para usuario y clave, pero difieren en cómo se envían los datos y en su estructura visual:
+El primer formulario es el más funcional y correcto para un login real, ya que envía los datos al servidor mediante POST.
+El segundo usa GET, útil para pruebas o búsquedas, pero inseguro para contraseñas porque los datos quedan visibles en la URL.
+El tercero intenta enviar los datos por correo, lo cual no es habitual ni recomendable para formularios web; además, el botón 
+“Enviar” no cumple esa función porque es de tipo reset.
+En buenas prácticas modernas, se recomienda usar POST para formularios de login y manejar el envío con scripts del lado del 
+servidor (PHP, Python, etc.), evitando mailto y GET para datos sensibles.
