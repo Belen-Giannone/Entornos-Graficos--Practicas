@@ -93,3 +93,21 @@ El segundo caso fuerza la presentación del título dentro de la tabla usando co
 pero pierde semántica.
 En buenas prácticas modernas, se recomienda usar <caption> para títulos y CSS para estilos, porque mejora la accesibilidad y 
 mantiene la estructura más clara.
+
+3.f
+- Diferencias en visualización
+Primer código (rowspan):
+La primera celda ocupa dos filas en la misma columna.
+El título aparece verticalmente al lado de las celdas “Celda 1” y “Celda 2”, extendiéndose hacia abajo.
+
+Segundo código (colspan):
+La primera celda ocupa dos columnas en la misma fila.
+El título aparece centrado horizontalmente sobre las dos celdas de la fila siguiente.
+
+- Conclusión
+Ambos ejemplos muestran cómo se pueden fusionar celdas en una tabla, pero con efectos distintos:
+colspan combina columnas en una misma fila (horizontal).
+rowspan combina filas en una misma columna (vertical).
+Visualmente, el título cambia de posición: arriba ocupando todo el ancho (colspan) o al costado ocupando toda la altura (rowspan).
+En buenas prácticas, se recomienda usar colspan y rowspan solo cuando sea necesario para organizar datos, y acompañarlo con CSS 
+para mejorar la presentación.
