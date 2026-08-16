@@ -74,3 +74,22 @@ Ambos códigos generan tablas similares, pero:
 El primer caso aprovecha la semántica de <th> para encabezados, lo que es más correcto y accesible.
 El segundo caso fuerza la presentación con <div> y estilos, lo que da más control visual pero pierde semántica.
 En navegadores modernos y para accesibilidad, se recomienda usar <th> para encabezados y CSS para estilos.
+
+3.e
+- Diferencias en visualización
+Primer código:
+El título se muestra encima de la tabla, separado del contenido, gracias a la etiqueta <caption>.
+Las filas contienen celdas vacías con fondo gris (bgcolor="#dddddd").
+
+Segundo código:
+El título aparece dentro de la tabla, en la primera fila, ocupando las tres columnas gracias a colspan="3".
+El texto se centra manualmente con <div align="center">.
+Las filas siguientes también muestran celdas vacías con fondo gris.
+
+- Conclusión
+El primer caso usa <caption>, que es más semántico y accesible, ya que está pensado específicamente para títulos de tabla y 
+se coloca automáticamente arriba.
+El segundo caso fuerza la presentación del título dentro de la tabla usando colspan y estilos, lo que da más control visual 
+pero pierde semántica.
+En buenas prácticas modernas, se recomienda usar <caption> para títulos y CSS para estilos, porque mejora la accesibilidad y 
+mantiene la estructura más clara.
