@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5 - Estructura de Marcos</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .layout-table {
+      width: 100%;
+      height: 100vh;
+      border-collapse: collapse;
+    }
+
+    .layout-table td {
+      border: 2px solid #693699;
+      padding: 15px;
+    }
+
+    .header {
+      height: 80px;
+      background-color: #ecf0f1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo-container {
+      width: 150px;
+      text-align: center;
+      background-color: #bdc3c7;
+    }
+
+    .menu {
+      width: 200px;
+      vertical-align: top;
+      background-color: #f9f9f9;
+    }
+
+    .content {
+      padding: 0 !important;
+    }
+
+    .footer {
+      height: 50px;
+      background-color: #ecf0f1;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #693699;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table class="layout-table">
+    <tr>
+      <td class="header" colspan="2">Entornos Gráficos</td>
+      <td class="logo-container">
+        <img src="logo_utn.jpg" alt="Logo Institución" style="max-width: 100%; height: auto;">
+      </td>
+    </tr>
+
+    <tr>
+      <td class="menu">
+        <h3>Menú Principal</h3>
+        <ul>
+          <li><a href="articulos.html" target="principal">Ver Artículos</a></li>
+          <li><a href="masInfo.html" target="principal">Más Información</a></li>
+        </ul>
+      </td>
+      <td class="content" colspan="2">
+        <iframe name="principal" src="about:blank" title="Contenido Principal"></iframe>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="footer" colspan="3">
+        Navegación:
+        <a href="articulos.html" target="principal">Artículos</a> |
+        <a href="masInfo.html" target="principal">Más Info</a> |
+        <a href="about:blank" target="principal">Cerrar Vista</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
