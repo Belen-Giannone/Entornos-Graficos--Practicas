@@ -1,0 +1,40 @@
+1. ¿ Qué es CSS y para qué se usa?
+CSS (Cascade Style Sheets o Hojas de Estilo en Cascada) es un lenguaje utilizado para definir la presentcion
+y el aspecto visual de los documentos HTML.
+Se utiliza para controlar caracteristicas como colores, fuentes, tamañois, margenes, espacios,
+posiciones y otros aspectos de presentacion, permitiendo separar el contenido de un documentode su diseño.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+Las reglas de estilo CSS estan formadas por un selector y un bloque de declaraciones.
+Como ejemplo, podemos ver: 
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+donde "p" es el selector que indica a que elementos se aplicar el estilo.
+color: blue; es una declaracion, formada por una propiedad (color) y un valor (blue).
+font-size: 16px es otra declaracion.
+Las declaraciones se escriben entre llaves { } y cada una termina en un punto y coma ; .
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+Hay tres formas principales:
+-Hojas de estilo externas: Se escribe en el CSS en un archivo separado y se lo vincula al documento HTML.
+<link rel="stylesheet" href="estilos.css"> 
+Ésta es la forma mas conveniente cuando se quiere aplicar el mismo estilo en varias paginas.
+
+-Hojas de estilo internas: Las reglas CSS se colocan dentro del elemento <style>, generalmente dentro del <head> del documento HTML.
+<style>
+    p {
+        color: blue;
+    }
+</style>
+
+-Estilos de linea (inline): este estilo se coloca directamente en el elemento HTML mediante el atributo style.
+<p style="color: red;">Texto</p>
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+6. ¿ Qué es la herencia?
+7. ¿ En qué consiste el proceso denominado cascada?
