@@ -35,6 +35,62 @@ Hay tres formas principales:
 
 4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
 Ejemplifique cada uno.
+Algunos de los selectores mas utilizados son:
+-Selector de elemento o tipo: Selecciona todos los elementos de un determinado tipo.
+p {
+    color: red;
+}
+Selecciona todos los elementos <p>.
+
+-Selector de clase: Selecciona los elementos que poseen una determinada clase. Se representa mediante .
+.destacado {
+    color: blue;
+} 
+Y en HTML: 
+<p class="destacado">Texto</p>
+
+-Selector de ID: Selecciona el elemento que posee un determinado id.Se representa mediante #.
+#titulo {
+    color: green;
+}
+Y en HTML: 
+<h1 id="titulo">Título</h1>
+
+-Selector universal: Selecciona todos los elementos del documento. Se representa mediante *.
+* {
+    margin: 0;
+}
+
+-Selector descendente: Selecciona elementos que se encuentran dentro de otro elemento.
+div p {
+    color: red;
+}
+Selecciona los <p> que se encuentran dentro de un <div>.
+
 5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+Una pseudo-clase permite seleccionar elementos segun el estado o condicion determinada,
+sin necesidad de agregar una clase al elemento HTML.
+Las pseudo-clases mas utilizadas para vinculos son: 
+:link -> representa un vinculo que todavia no ha sido visitado.
+:visited -> representa un vinculo que ya fue visitado.
+:hover -> se aplica cuando el usuario coloca el puntero sobre el vinculo.
+:active -> se aplica mientras el vinculo esta siendo activado, por ejemplo, cuando hace click.
+
 6. ¿ Qué es la herencia?
+La herencia es el mecanismo mediante el cual determinadas propiedades CSS de un elemento
+pueden ser heredadas por sus elementos descendientes.
+Un ejemplo:
+body {
+    color: blue;
+}
+Los elementos que se encuentran dentro de <body> pueden heredar ese color,
+salvo que tengan otro valor definido para esa propiedad.
+La herencia permite evitar tener que especificar el mismo estilo individualmente para cada elemento.
+
 7. ¿ En qué consiste el proceso denominado cascada?
+La cascada es el proceso mediante el cual CSS determina qué reglas de estilo se aplican a un elemento 
+cuando existen varias reglas que podrian afectarlo.
+Para determinar el estilo final se tienen en cuenta aspectos como: el origen de las reglas, la importancia de las declaraciones, la especificidad de las selectores,
+y el orden en que aparecen las reglas.
+
+Es decir, que cuando varias reglas afectan al mismo elemento y establecen valores diferentes par una misma propiedad, la cascada determina cual de ellas tiene prioridad.
