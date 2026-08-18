@@ -6,8 +6,8 @@ a:link {color: gray;} -> hace que los enlaces que todavía no fueron visitados s
 a:visited {color: blue;} -> hace que los enlaces que ya fueron visitados sean de color azul.
 a:hover {color: fuchsia;} -> hace que el enlace cambie a color fucsia cuando pasamos el cursor por encima.
 a:active {color: red;} -> hace que el enlace sea rojo mientras hacemos clic sobre él.
-p {font-family: arial,helvetica; font-size: 10px; color: black;} -> establece para los textos la fuente Arial o Helvetica, un tamaño de 10 píxeles y color negro.
-.contenido {font-size: 14px; font-weight: bold;} -> establece un tamaño de 14 píxeles y texto en negrita para los elementos que tengan la clase "contenido".
+p {font-family: arial,helvetica; font-size: 10px; color: black;} -> establece para los textos la fuente Arial o Helvetica, un tamaño de 10 pixeles y color negro.
+.contenido {font-size: 14px; font-weight: bold;} -> establece un tamaño de 14 pixeles y texto en negrita para los elementos que tengan la clase "contenido".
 
 Primer codigo: 
 <body>
@@ -32,10 +32,10 @@ Entonces, el texto queda con fuente Arial o Helvetica, tamaño 14 pixeles, color
 
 En la tabla no se establece un color especifico, por lo que puede recibir el color verde de la regla *.
 Y en el enlace se aplican las reglas de los vinculos segun su estado: 
-Si no fue visitado, sera gris por a:link.
-Si ya fue visitado, sera azul por a:visited.
-Si pasamos el cursor por encima, sera fucsia por a:hover.
-Mientras hacemos click, sera rojo por a:active
+-Si no fue visitado, sera gris por a:link.
+-Si ya fue visitado, sera azul por a:visited.
+-Si pasamos el cursor por encima, sera fucsia por a:hover.
+-Mientras hacemos click, sera rojo por a:active
 
 Segundo codigo:
 
