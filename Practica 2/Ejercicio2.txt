@@ -8,8 +8,7 @@ font-weight: bold;
 }
 -Selector: p#normal. Selecciona los elementos <p> que tengan el atributo id con valor "normal".
 -Declaraciones:
-font-family: arial, helvetica -> establece la familia de fuente. Se usará Arial,
-y si no esta disponible, Helvetica.
+font-family: arial, helvetica -> establece la familia de fuente. Se usará Arial, y si no esta disponible, Helvetica.
 font-size: 11px -> establece el tamaño de la fuente en 11 pixeles.
 font-weight: bold -> establece el texto en negrita.
 -Aplicacion de la regla: 
@@ -42,4 +41,4 @@ color: red;
  background-color: #9EC7EB -> establece el color de fondo.
  color: red -> establece el color del texto en rojo.
  -Aplicaicon de la regla: <p id="distinto">Este es el último párrafo</p>
- -Efecto: El parrafo tendra un fondo de colro #9EC7EB y el texto sera rojo.
+ -Efecto: El parrafo tendra un fondo de color #9EC7EB y el texto sera rojo.
