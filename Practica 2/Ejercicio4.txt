@@ -1,0 +1,61 @@
+Ejercicio 4
+
+REGLAS:
+* {color: green;} -> hace que los elementos tengan el texto de color verde.
+a:link {color: gray;} -> hace que los enlaces que todavía no fueron visitados sean de color gris.
+a:visited {color: blue;} -> hace que los enlaces que ya fueron visitados sean de color azul.
+a:hover {color: fuchsia;} -> hace que el enlace cambie a color fucsia cuando pasamos el cursor por encima.
+a:active {color: red;} -> hace que el enlace sea rojo mientras hacemos clic sobre él.
+p {font-family: arial,helvetica; font-size: 10px; color: black;} -> establece para los textos la fuente Arial o Helvetica, un tamaño de 10 píxeles y color negro.
+.contenido {font-size: 14px; font-weight: bold;} -> establece un tamaño de 14 píxeles y texto en negrita para los elementos que tengan la clase "contenido".
+
+Primer codigo: 
+<body>
+<p class="contenido" style="font-weight: normal;">
+Este es un texto ...............</p>
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con un enlace</a></td>
+</tr>
+</table>
+</body>
+
+El <p> tiene la clase "contenido", por lo que se le aplica la regla .contenido. Esta regla hace que el texto tenga un tamaño de 14 pixeles y este en negrita. 
+Pero el <p> también tiene style="font-weight: normal;". Este estilo esta escrito directamente en el elemento, por lo que tiene prioridad sobre la regla .contenido. 
+Por eso el texto queda normal y no en negrita.
+La regla p también se aplica al texto, por lo que tendra fuente Arial o Helvetica, color negro y tamaño de 10 pixeles.
+Como la regla .contenido establece un tamaño de 14 pixeles y se aplica directamente al texto, el tamaño final sera de 14 pixeles.
+Entonces, el texto queda con fuente Arial o Helvetica, tamaño 14 pixeles, color negro y texto normal.
+
+En la tabla no se establece un color especifico, por lo que puede recibir el color verde de la regla *.
+Y en el enlace se aplican las reglas de los vinculos segun su estado: 
+Si no fue visitado, sera gris por a:link.
+Si ya fue visitado, sera azul por a:visited.
+Si pasamos el cursor por encima, sera fucsia por a:hover.
+Mientras hacemos click, sera rojo por a:active
+
+Segundo codigo:
+
+<body class="contenido">
+<p>Este es un texto................</p>
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con un enlace</a></td>
+</tr>
+</table>
+</body>
+
+En este caso, la clase "contenido" esta aplicada al <body>. Por lo tanto, el <body> tiene un tamaño de 14 pixeles y texto en negrita.
+Estas propiedades pueden heredarse a los elementos que están dentro del <body>.
+El <p> tiene una regla propia, p, que establece un tamaño de 10 pixeles, fuente Arial o Helvetica y color negro. Por eso estas propiedades no se toman de la clase "contenido" del <body>.
+Pero la regla p no establece el grosor del texto, por lo que el <p> puede heredar la propiedad font-weight: bold del <body>.
+Entonces, en este caso el texto tendra un tamaño de 10 pixeles, color negro, fuente Arial o Helvetica y estara en negrita.
+
+La tabla tambien puede heredar del <body> el tamaño de 14 pixeles y la negrita.
+Y como se menciono antes, el enlace tiene sus propias reglas de color.
