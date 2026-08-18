@@ -1,0 +1,60 @@
+Ejercicio 3
+
+Declaración de la primera regla:
+p.quitar {
+color: red;
+}
+-Selector: p.quitar. Selecciona los elementos <p> que tienen la clase "quitar".
+-Declaracion:
+color: red -> establece el color de texto en rojo.
+-Aplicacion:
+<p class="quitar">
+Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+-Efecto: El texto del parrafo se mostrara en color rojo.
+
+
+Declaración de la segunda regla:
+*.desarrollo {
+font-size: 8px;
+}
+- Selector: *.desarrollo. Selecciona los elementos que tienen la clase "desarrollo". El * indica que puede aplicarse a cualquier tipo de elemento.
+- Declaración:
+font-size: 8px; → establece el tamaño del texto en 8 píxeles.
+- Aplicación de la regla:
+<p class="desarrollo">
+En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+- Efecto: El texto del párrafo se mostrará con un tamaño de 8 píxeles.
+
+
+Declaración de la tercera regla:
+.importante {
+font-size: 20px;
+}
+- Selector: .importante. Se aplica a cualquier elemento que tenga la clase "importante".
+- Declaración:
+font-size: 20px; → establece el tamaño del texto en 20 píxeles.
+- Aplicaciones de la regla:
+<p class="importante">
+Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+- Efecto: En los dos casos, el texto tendra un tamaño de 20 píxeles porque los dos elementos tienen la clase "importante".
+
+
+Aplicación de la primera regla en el encabezado:
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+- Efecto: La regla p.quitar no se aplica a este elemento porque la regla especifica que debe ser un elemento <p>. 
+Aunque el <h1> tiene la clase "quitar", no cumple con el selector.
+
+
+Aplicación de varias clases:
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+Este elemento tiene dos clases: "quitar", "importante".
+-La clase "quitar" hace que el texto sea rojo porque se aplica la regla p.quitar.
+-La clase "importante" hace que el tamaño del texto sea de 20 píxeles.
+- Efecto: El texto será rojo y tendrá un tamaño de 20 píxeles.
