@@ -35,9 +35,4 @@ $g = $f += 10;
 echo $a, $b, $c, $d, $f , $g;
 ?>
 
-// Salida por pantalla: boolean
-// string
-// string
-// integer
-// 1 xyz xyz 18 44 44
 
