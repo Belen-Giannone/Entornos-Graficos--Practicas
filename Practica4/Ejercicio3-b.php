@@ -21,10 +21,8 @@ else {
  echo 'Menor de edad';
  }
 }
-?>
-</body></html>
 
-*/Explicación del código:
+/* Explicación del código:
 if (!isset($_POST['submit'])) → Verifica si el formulario no fue enviado.
 Si no fue enviado, se muestra el formulario con un campo de texto para ingresar la edad y un botón Ir.
 action="<?php echo $_SERVER['PHP_SELF']; ?>" → Hace que el formulario se envíe a la misma página.
@@ -33,4 +31,6 @@ method="post" → Envía los datos usando el método POST.
 Cuando el usuario envía el formulario, se ejecuta el bloque else.
 $age = $_POST['age']; → Recupera el valor ingresado en el campo "Edad".
 if ($age >= 21) → Si la edad es mayor o igual a 21, imprime "Mayor de edad".
-else → Si no, imprime "Menor de edad".
+else → Si no, imprime "Menor de edad" */
+?>
+</body></html>
