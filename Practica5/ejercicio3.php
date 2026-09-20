@@ -27,5 +27,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "No se pudo enviar la recomendación.";
     }
 }
-
 ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendar sitio</title>
+</head>
+
+<body>
+
+    <h1>Recomendar este sitio a un amigo</h1>
+
+    <form action="ejercicio3.php" method="post">
+
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <label for="email_amigo">Correo de tu amigo:</label>
+        <input type="email" id="email_amigo" name="email_amigo" required>
+
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Recomendar">
+
+    </form>
+
+</body>
+</html>
