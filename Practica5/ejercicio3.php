@@ -1,9 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $nombre = $_POST["nombre"];
-    $email_amigo = $_POST["email_amigo"];
-    $mensaje = $_POST["mensaje"];
+    // Sanitización y validación
+    $nombre = htmlspecialchars($_POST["nombre"]);
+    $email_amigo = filter_var($_POST["email_amigo"], FILTER_SANITIZE_EMAIL);
+    $mensaje = htmlspecialchars($_POST["mensaje"]);
+
+    if (!filter_var($email_amigo, FILTER_VALIDATE_EMAIL)) {
+        echo "El correo del amigo no es válido.";
+        exit;
+    }
 
     $asunto = "Te recomiendo este sitio";
 
