@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 - Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <h2>Parte A</h2>
+  <div class="container">
+    <!-- Fila completa -->
+    <div class="row">
+      <div class="col-12">
+        <div class="p-3 mb-2 bg-primary text-white">Columna 100%</div>
+      </div>
+    </div>
+    <!-- Dos columnas -->
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="p-3 mb-2 bg-warning">Columna izquierda</div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="p-3 mb-2 bg-success">Columna derecha</div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Parte B</h2>
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="row">
+      <div class="col-12">
+        <div class="p-3 mb-2 bg-secondary text-white">Encabezado</div>
+      </div>
+    </div>
+
+    <!-- Sidebar + contenido principal -->
+    <div class="row align-items-stretch">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="p-3 bg-danger-subtle text-dark h-100">Sidebar</div>
+      </div>
+
+      <!-- Contenido principal -->
+      <div class="col-md-9">
+        <!-- Bloque superior -->
+        <div class="row">
+          <div class="col-12">
+            <div class="p-3 mb-2 bg-success text-white">Bloque superior</div>
+          </div>
+        </div>
+
+        <!-- Bloques violetas -->
+        <div class="row">
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+          <div class="col-md-4 col-6">
+            <div class="p-3 mb-2 bg-secondary text-white">Bloque</div>
+          </div>
+        </div>
+
+        <!-- Dos rectángulos grandes -->
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="p-3 mb-2 bg-info text-white">Rectángulo grande 1</div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="p-3 mb-2 bg-info text-white">Rectángulo grande 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
