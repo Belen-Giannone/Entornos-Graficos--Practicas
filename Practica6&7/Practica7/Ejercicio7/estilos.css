@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #263247;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 22px 8%;
+    border-bottom: 1px solid #e8ecf2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #263f73;
+}
+
+main {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.subtitulo {
+    color: #748096;
+    margin-bottom: 28px;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e8ecf2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 13px;
+    color: #748096;
+    background-color: #f8f9fc;
+    padding: 16px;
+}
+
+td {
+    padding: 18px 16px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.precio {
+    font-weight: bold;
+    color: #263f73;
+    white-space: nowrap;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #315da8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.boton:hover {
+    background-color: #244982;
+}
+
+.enlace {
+    display: inline-block;
+    margin-top: 22px;
+    color: #315da8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
+
+.total {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f3f6fc;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.total h2 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.total span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #263f73;
+}
+
+.vacio {
+    color: #748096;
+    padding: 15px 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    .contenedor {
+        padding: 14px;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 12px 9px;
+        font-size: 13px;
+    }
+
+    .boton {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .total span {
+        font-size: 18px;
+    }
+}
